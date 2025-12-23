@@ -14,7 +14,7 @@
 
 ## 🛠️ Data Access Guide (Hướng dẫn xử lý dữ liệu)
 
-Để bảo đảm tính toàn vẹn dữ liệu, các tệp tin trong bộ dữ liệu này có chứa **kí tự bảo vệ ẩn (Hidden Watermark)** ở vị trí đầu tiên. Việc đọc trực tiếp bằng `json.load()` thông thường sẽ gây lỗi.
+Để bảo đảm tính toàn vẹn dữ liệu, việc đọc trực tiếp bằng `json.load()` thông thường sẽ gây lỗi.
 
 **Yêu cầu:** Bạn cần loại bỏ ký tự **Zero Width Space (`\u200b`)** trước khi phân tích cú pháp.
 
@@ -39,11 +39,11 @@ def load_vielaw_data(file_path):
             return json.loads(content)
             
     except Exception as e:
-        print(f"❌ Error loading data: {e}")
-        return None
+        pass
 
 # Usage
 data = load_vielaw_data('path/to/hinhsu_task1.json')
+'''
 📂 Dataset Structure (Cấu trúc dữ liệu)
 
 📜 Citation (Trích dẫn)
