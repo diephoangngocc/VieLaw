@@ -86,12 +86,4 @@ def load_vielaw_data(file_path):
 # Usage
 data = load_vielaw_data('path/to/hinhsu_task1.json')
 ```
----
-## 📜 Citation
 
-If you use **VieLaw** in your research or software projects, please cite it as follows:
-
-```bibtex
-```
----
-# ⚖️ License
